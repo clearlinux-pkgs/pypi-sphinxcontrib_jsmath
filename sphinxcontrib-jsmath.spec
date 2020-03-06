@@ -6,7 +6,7 @@
 #
 Name     : sphinxcontrib-jsmath
 Version  : 1.0.1
-Release  : 8
+Release  : 9
 URL      : https://files.pythonhosted.org/packages/b2/e8/9ed3830aeed71f17c026a07a5097edcf44b692850ef215b161b8ad875729/sphinxcontrib-jsmath-1.0.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b2/e8/9ed3830aeed71f17c026a07a5097edcf44b692850ef215b161b8ad875729/sphinxcontrib-jsmath-1.0.1.tar.gz
 Source1  : https://files.pythonhosted.org/packages/b2/e8/9ed3830aeed71f17c026a07a5097edcf44b692850ef215b161b8ad875729/sphinxcontrib-jsmath-1.0.1.tar.gz.asc
@@ -25,7 +25,7 @@ BuildRequires : virtualenv
 
 %description
 sphinxcontrib-jsmath is a sphinx extension which renders display math in HTML
-via JavaScript.
+        via JavaScript.
 
 %package license
 Summary: license components for the sphinxcontrib-jsmath package.
@@ -48,7 +48,7 @@ python components for the sphinxcontrib-jsmath package.
 Summary: python3 components for the sphinxcontrib-jsmath package.
 Group: Default
 Requires: python3-core
-Provides: pypi(sphinxcontrib-jsmath)
+Provides: pypi(sphinxcontrib_jsmath)
 
 %description python3
 python3 components for the sphinxcontrib-jsmath package.
@@ -63,8 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582919499
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583452864
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
