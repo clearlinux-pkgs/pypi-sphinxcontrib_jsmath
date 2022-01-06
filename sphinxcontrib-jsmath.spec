@@ -6,7 +6,7 @@
 #
 Name     : sphinxcontrib-jsmath
 Version  : 1.0.1
-Release  : 24
+Release  : 25
 URL      : https://files.pythonhosted.org/packages/b2/e8/9ed3830aeed71f17c026a07a5097edcf44b692850ef215b161b8ad875729/sphinxcontrib-jsmath-1.0.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b2/e8/9ed3830aeed71f17c026a07a5097edcf44b692850ef215b161b8ad875729/sphinxcontrib-jsmath-1.0.1.tar.gz
 Source1  : https://files.pythonhosted.org/packages/b2/e8/9ed3830aeed71f17c026a07a5097edcf44b692850ef215b161b8ad875729/sphinxcontrib-jsmath-1.0.1.tar.gz.asc
@@ -17,11 +17,11 @@ Requires: sphinxcontrib-jsmath-license = %{version}-%{release}
 Requires: sphinxcontrib-jsmath-python = %{version}-%{release}
 Requires: sphinxcontrib-jsmath-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-BuildRequires : pluggy
-BuildRequires : py-python
-BuildRequires : pytest
-BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(pluggy)
+BuildRequires : pypi(py)
+BuildRequires : pypi(pytest)
+BuildRequires : pypi(tox)
+BuildRequires : pypi(virtualenv)
 
 %description
 sphinxcontrib-jsmath is a sphinx extension which renders display math in HTML
@@ -63,7 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1603404925
+export SOURCE_DATE_EPOCH=1641428415
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
